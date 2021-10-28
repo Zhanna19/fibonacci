@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nearest Fibonacci</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <section id="calculator">
+            <input type="number" id="input-number" v-model="number" />
+            <button @click="getNumber">Find Nearest Fibonacci Number</button>
+        </section>
+        <section id="results">
+            <h2 id="current-number">{{ number }}</h2>
+            <h2>Nearest Fibonacci Number: <span id="nearest-number">{{ result }}</span></h2>
+        </section>
+    </div>
+
+<script src="src/script.js"></script>
+</body>
+</html>
